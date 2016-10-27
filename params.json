@@ -1,0 +1,6 @@
+{
+  "name": "Hanye Xu GitHub Page",
+  "tagline": "Linkedin: https://www.linkedin.com/in/hanye-xu",
+  "body": "Welcome to my GitHub page! -- Hanye\r\n\r\n\r\n***\r\n\r\nWork Logs:\r\n* 10/6 - 10/14\r\nFinished Weibo login python code. Added verification picture type in function to the code.\r\n* 10/14 - 10/21\r\nFinished Baidu News Search crawler code: get items from Baidu News Search and stored them in csv file with title, time, author, content and url links.\r\n* 10/22 - 10/28\r\nTODO: \r\nGenerating pdf for each news obtained from Baidu News. Probably need a number for each news? \r\nFinish the keyword list for Baidu News Crawler. Add key word to each news in csv. \r\nWorking on Google News Crawler. ",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

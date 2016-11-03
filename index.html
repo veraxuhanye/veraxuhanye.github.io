@@ -34,7 +34,8 @@
 <p>Work Logs:</p>
 
 <ul>
-<li>10/6 - 10/14
+<li>
+<strong>10/6 - 10/14</strong>
 
 <ul>
 <li>Finished Weibo login python code: The Weibo login code take in those three weibo accounts' usernames and passwords try to login into to Weibo. Since Weibo encode usernames and passwords, we need to encode the username and password into "Weibo" form. Then, a postdata for login have to be completed for login. After sending the request for login, we need to check the returning html to see if it is successful. More details are included in comments with the code. </li>
@@ -42,41 +43,51 @@
 </ul>
 </li>
 <li>
-<p>10/14 - 10/21</p>
+<p><strong>10/14 - 10/21</strong></p>
 
 <ul>
 <li>Finished Baidu News Search crawler code: Get news items from Baidu News Search and stored them in csv file with title, time, author, content and url links. Instead of using an existing API, the code is written to getting the news from news.baidu.com. In the process, we first encode the search keyword into the url for news.baidu.com. Then parse the whole html. For Baidu.com, it provides the list of articles with title, time, author and url in their seach page. Reg expression functions are written to obtain the information. Next, a function is written to get access to the url (the news article website), and also use libs and regular expressions to obtain the context of those article. The lib I used is called beautifulSoup.</li>
-<li>Additionally, a text file is used for storing all these visited url to prevent duplication. All these information are stored in a cvs file.</li>
-<li>TODO: 
-        + some page cannot be read, messy code Chinese shown
-        + the csv file cannot show Chinese properly, but google drive is able to show</li>
+<li>Additionally, a text file is used for storing all these visited url to prevent duplication. All these information are stored in a cvs file.
+*<em>TODO:</em> </li>
+<li>some page cannot be read, messy code Chinese shown</li>
+<li>the csv file cannot show Chinese properly, but google drive is able to show</li>
 </ul>
 </li>
 <li>
-<p>10/22 - 10/28</p>
+<p><strong>10/22 - 10/28</strong></p>
 
 <ul>
 <li>Finished Google News Search crawler code: Get news items from Google News Search and stored them in a csv file with title, time, author, content and url links. The API I used here is called gnp. Unlike Baidue news, the news.google.com only provide one page of search result without sorting. After sending request using gnp, a json file returned as a search result. Next, a function is written to parse the json file. In the json file, only title, author, url are provided. The same method is used to get the full content of the news article as Baidu part. Then store information in a csv file. </li>
 <li>PDF generate function is also implemented to both news crawler. The lib I used here is called pdfkit with wkhtmltopdf. This lib is a little bit slow, so I modify it to be generating pdf without pictures and links. I also tried another lib, however, it can convert web to png. </li>
-<li>TODO:
-        + Try another lib if it can convert web to pdf
-        + Get time from google news article </li>
 </ul>
 </li>
 <li>
-<p>10/29 - 11/04</p>
+<p><em>TODO:</em></p>
 
 <ul>
-<li>What have been done so far:
-        + finished integrating keyword list into the baidu news crawler, each keyword has 100 related news, however, it takes about 1 hour to generate 100 news' pdf???!!! Have to think about another way....
-        + finished cvs file modify, each row has a pdf num, category, keyword followed by previous content.</li>
-<li>TODO:<br>
-        + working on getting time of google news 
-        + try to fix baidu messy Chinese words
-        + optimize pdf generation process, or change a lib 
-        + Q: Does keywords have unique news ? or duplicate news can be exist among all??
-        + Q: All info save to one csv or seperate?? 
-        + Q: 100 news for baidue almost covers more than one month's news, do we shrink it?</li>
+<li>Try another lib if it can convert web to pdf</li>
+<li>Get time from google news article </li>
+</ul>
+</li>
+<li>
+<p><strong>10/29 - 11/04</strong></p>
+
+<ul>
+<li>What have been done so far:</li>
+<li>finished integrating keyword list into the baidu news crawler, each keyword has 100 related news, however, it takes about 1 hour to generate 100 news' pdf???!!! Have to think about another way....</li>
+<li>finished cvs file modify, each row has a pdf num, category, keyword followed by previous content.</li>
+</ul>
+</li>
+<li>
+<em>TODO:</em><br>
+
+<ul>
+<li>working on getting time of google news </li>
+<li>try to fix baidu messy Chinese words</li>
+<li>optimize pdf generation process, or change a lib </li>
+<li>Q: Does keywords have unique news ? or duplicate news can be exist among all??</li>
+<li>Q: All info save to one csv or seperate?? </li>
+<li>Q: 100 news for baidue almost covers more than one month's news, do we shrink it?</li>
 </ul>
 </li>
 </ul>

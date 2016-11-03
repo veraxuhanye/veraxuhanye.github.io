@@ -43,12 +43,17 @@
 </ul>
 </li>
 <li>
-<p><strong>10/14 - 10/21</strong></p>
+<strong>10/14 - 10/21</strong>
 
 <ul>
 <li>Finished Baidu News Search crawler code: Get news items from Baidu News Search and stored them in csv file with title, time, author, content and url links. Instead of using an existing API, the code is written to getting the news from news.baidu.com. In the process, we first encode the search keyword into the url for news.baidu.com. Then parse the whole html. For Baidu.com, it provides the list of articles with title, time, author and url in their seach page. Reg expression functions are written to obtain the information. Next, a function is written to get access to the url (the news article website), and also use libs and regular expressions to obtain the context of those article. The lib I used is called beautifulSoup.</li>
-<li>Additionally, a text file is used for storing all these visited url to prevent duplication. All these information are stored in a cvs file.
-*<em>TODO:</em> </li>
+<li>Additionally, a text file is used for storing all these visited url to prevent duplication. All these information are stored in a cvs file.</li>
+</ul>
+</li>
+<li>
+<p><em>TODO:</em> </p>
+
+<ul>
 <li>some page cannot be read, messy code Chinese shown</li>
 <li>the csv file cannot show Chinese properly, but google drive is able to show</li>
 </ul>

@@ -35,14 +35,34 @@
 
 <ul>
 <li>10/6 - 10/14
-Finished Weibo login python code. Added verification picture type in function to the code.</li>
-<li>10/14 - 10/21
-Finished Baidu News Search crawler code: get items from Baidu News Search and stored them in csv file with title, time, author, content and url links.</li>
-<li>10/22 - 10/28
+
+<ul>
+<li>Finished Weibo login python code: The Weibo login code take in those three weibo accounts' usernames and passwords try to login into to Weibo. Since Weibo encode usernames and passwords, we need to encode the username and password into "Weibo" form. Then, a postdata for login have to be completed for login. After sending the request for login, we need to check the returning html to see if it is successful. More details are included in comments with the code. </li>
+<li>Added verification picture type in function to the code: Since the three weibo account we obtained cannot login normally, a python function is written to obtain the verification picture from Weibo login page. The user needs to manually type in verification code for login. There are 5 changes for each account to try the verification code, otherwise, the login will fail. </li>
+</ul>
+</li>
+<li>
+<p>10/14 - 10/21</p>
+
+<ul>
+<li>Finished Baidu News Search crawler code: Get news items from Baidu News Search and stored them in csv file with title, time, author, content and url links. Instead of using an existing API, the code is written to getting the news from news.baidu.com. In the process, we first encode the search keyword into the url for news.baidu.com. Then parse the whole html. For Baidu.com, it provides the list of articles with title, time, author and url in their seach page. Reg expression functions are written to obtain the information. Next, a function is written to get access to the url (the news article website), and also use libs and regular expressions to obtain the context of those article. The lib I used is called beautifulSoup.</li>
+<li>Additionally, a text file is used for storing all these visited url to prevent duplication. All these information are stored in a cvs file.</li>
+<li>TODO: 
+        - some page cannot be read, messy code Chinese shown
+        - the csv file cannot show Chinese properly, but google drive is able to show</li>
+</ul>
+</li>
+<li>
+<p>10/22 - 10/28</p>
+
+<ul>
+<li>Finished Google News Search crawler code: 
 TODO: 
 Generating pdf for each news obtained from Baidu News. Probably need a number for each news? 
 Finish the keyword list for Baidu News Crawler. Add key word to each news in csv. 
 Working on Google News Crawler. </li>
+</ul>
+</li>
 </ul>
       </section>
     </div>

@@ -6,12 +6,13 @@
 *[TaskList DEMO](https://veraxuhanye.github.io/task-list/)  
 *Applied: Autho, JWT (Identity Management and App security) / Express, Web stack (serverless REST API) / mLab(MangoDB) / static file hosting (Github pages) 
 
-**MetricsVis Project**
-**Project 2: A D3.js data filtering project with sorting, ranking, selections and tooptips**
-![Overview Of MetricsVis](https://veraxuhanye.github.io/MetricsVis/images/overview.png)
-[MetricsVis Demo](https://veraxuhanye.github.io/MetricsVis/)
 
-**Work Logs for CRCS**
+#Project 2: A D3.js data filtering project with sorting, ranking, selections and tooptips#
+*MetricsVis Project D3.js Application
+![Overview Of MetricsVis](https://veraxuhanye.github.io/MetricsVis/images/overview.png)
+*[MetricsVis Demo](https://veraxuhanye.github.io/MetricsVis/)
+
+####Work Logs for CRCS####
 ***
 [Purdue CRCS Center Work Logs](https://veraxuhanye.github.io/WorkLogs/)
 ***
